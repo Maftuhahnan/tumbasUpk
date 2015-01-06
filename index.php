@@ -17,6 +17,8 @@
 		<!-- Script Main-->
 		<script src="<?php clink(); ?>asset/boot/js/jquery.js"></script>
 		<script src="<?php clink(); ?>asset/boot/js/bootstrap.min.js"></script>
+		<script src="<?php clink(); ?>asset/js/masonry.js"></script>
+		<script src="<?php clink(); ?>asset/js/core.js"></script>
 		
 	</head>
 	<body>
@@ -67,7 +69,7 @@
 	
 <section class="sc-menu">
 	<div class="container">
-	<nav class="navbar navbar-default trans hd-comp">
+	<nav class="navbar navbar-default trans hd-comp mn-clr">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -80,47 +82,151 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+    <div class="collapse navbar-collapse menu-sc" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav menu-scc">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Laptop</a></li>
+        <li><a href="#">Handphone</a></li>
+        <li><a href="#">Tablet</a></li>
+        <li><a href="#">Kamera</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Kesehatan</a></li>
+        <li><a href="#">Aksesoris</a></li>
+       
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+	  <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </div>
 </nav>
 </section>
+<section class="cara">
+	<div class="container">
+		<div class="row cent">
+		  <div class="col-md-4 pdt">
+			<img src="<?php clink(); ?>asset/img/ico1.png" width="120">
+			<h3>Cari</h3>
+			<p>Cari Barag Yang Ingin Anda Beli</p>
+		  </div>
+		  <div class="col-md-4">
+			<img src="<?php clink(); ?>asset/img/ico3.png" width="180">
+			<h3>Beli</h3>
+			<p>Klik Button Beli dan tulis jumlah</p>
+		 </div>
+		  <div class="col-md-4 pdt">
+			<img src="<?php clink(); ?>asset/img/ico2.png" width="120">
+			<h3>Konfirmasi</h3>
+			<p>Konfirmasi Barang Yang Sudah Anda Beli</p>
+		  </div>
+		</div>
 		
+	</div>
+</section>
+
+<div class="user" id="portfolio">
+		<div id="post-area" class="masonry" >
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="http://localhost/toko/wp-content/uploads/2014/07/4ALUVYYlQLC004zkGhd9_Sunset-at-Windermere.jpg">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="../css/pic/wow.png">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="../css/pic/hp.png">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="../css/pic/jos.png">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="../css/pic/hp.png">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="../css/pic/jos.png">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="http://localhost/toko/wp-content/uploads/2014/07/4ALUVYYlQLC004zkGhd9_Sunset-at-Windermere.jpg">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+			<div class="post-copy">
+				<div class="graf-image">
+					<img width="270" src="http://localhost/toko/wp-content/uploads/2014/07/4ALUVYYlQLC004zkGhd9_Sunset-at-Windermere.jpg">
+				</div>
+				<div class="graf-head">
+					<p class="head-jd">IndiBung IndiBung IndiBung IndiBung IndiBung IndiBung</p>
+					<p class="head-kal"><i class="fa fa-calendar"></i> 2014 - 10 - 20</p>
+				</div>
+				<div class="graf-rm">
+					<a href="" class="btn-rm">&rarr;</a>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
