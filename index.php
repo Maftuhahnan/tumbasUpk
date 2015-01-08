@@ -13,12 +13,14 @@
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300normal,300italic,400normal,400italic,600normal,600italic,700normal">
 		<link rel="stylesheet" type="text/css" href="<?php clink(); ?>asset/boot/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php clink(); ?>asset/core/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php clink(); ?>asset/js/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" type="text/css" href="<?php clink(); ?>asset/js/owl-carousel/owl.carousel.css">
 		
 		<!-- Script Main-->
 		<script src="<?php clink(); ?>asset/boot/js/jquery.js"></script>
 		<script src="<?php clink(); ?>asset/boot/js/bootstrap.min.js"></script>
 		<script src="<?php clink(); ?>asset/js/masonry.js"></script>
-		<script src="<?php clink(); ?>asset/js/core.js"></script>
+		<script src="<?php clink(); ?>asset/js/owl-carousel/owl.carousel.js"></script>
 		
 	</head>
 	<body>
@@ -127,8 +129,11 @@
 		
 	</div>
 </section>
-
-<div class="user" id="portfolio">
+<section class="isi-ctn">
+	<div class="container">	
+		<h1 class="judl">Latest Post</h1>
+	</div>
+	<div class="user" id="portfolio">
 		<div id="post-area" class="masonry" >
 			<div class="post-copy">
 				<div class="graf-image">
@@ -144,7 +149,7 @@
 			</div>
 			<div class="post-copy">
 				<div class="graf-image">
-					<img width="270" src="../css/pic/wow.png">
+					<img width="270" src="<?php clink(); ?>asset/img/bg.png">
 				</div>
 				<div class="graf-head">
 					<p class="head-jd">IndiBung</p>
@@ -156,7 +161,7 @@
 			</div>
 			<div class="post-copy">
 				<div class="graf-image">
-					<img width="270" src="../css/pic/hp.png">
+					<img width="270" src="http://localhost/toko/wp-content/uploads/2014/07/4ALUVYYlQLC004zkGhd9_Sunset-at-Windermere.jpg">
 				</div>
 				<div class="graf-head">
 					<p class="head-jd">IndiBung</p>
@@ -168,7 +173,7 @@
 			</div>
 			<div class="post-copy">
 				<div class="graf-image">
-					<img width="270" src="../css/pic/jos.png">
+					<img width="270" src="<?php clink(); ?>asset/img/bg.png">
 				</div>
 				<div class="graf-head">
 					<p class="head-jd">IndiBung</p>
@@ -227,6 +232,37 @@
 				</div>
 			</div>
 		</div>
+</section>
+<section class="client">
+	<div class="container">
+		<div id="clientsay" class="owl-carousel">
+		  <div class="item">
+				<div class="cls">
+					<img src="<?php clink(); ?>asset/img/user.jpg"  width="120" class="lazyOwl circle" data-src="path-to-your-image">
+					<p>Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Sit Amet Consectutur </p>
+					<p>- Ahmad Maftuh Ahnan</p>
+				</div>
+		  </div>
+		  <div class="item">
+				<div class="cls">
+					<img src="<?php clink(); ?>asset/img/user.jpg"  width="120" class="lazyOwl circle" data-src="path-to-your-image">
+					<p>Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Sit Amet Consectutur </p>
+					<p>- Ahmad Maftuh Ahnan</p>
+				</div>
+		  </div>
+		  <div class="item">
+				<div class="cls">
+					<img src="<?php clink(); ?>asset/img/user.jpg"  width="120" class="lazyOwl circle" data-src="path-to-your-image">
+					<p>Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Sit Amet Consectutur Lorem Ipsum Dolor Sit Amet Consectutur </p>
+					<p>- Ahmad Maftuh Ahnan</p>
+				</div>
+		  </div>
+		  
+		  
+		</div>
+	</div>
+</section>
 
+	<script src="<?php clink(); ?>asset/js/core.js"></script>
 	</body>
 </html>

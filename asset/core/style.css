@@ -142,6 +142,8 @@ body{
 	width:100%;
 	overflow:hidden;
 	padding-top:40px;
+	padding-bottom:40px;
+	border-bottom:1px solid #c0c0c0;
 }
 
 .cent{
@@ -153,7 +155,7 @@ body{
 }
 
 /* Custom Masonry */
-* NEWEST TERBARU */
+/* NEWEST TERBARU */
 
 
 .total{
@@ -358,4 +360,50 @@ body{
 	background-color: #FDFDFD;
 	border: 1px solid #cccccc;
 	padding:10px;
+	margin:auto;
 }
+
+.isi-ctn{
+	background:#fff;
+	overflow:hidden;
+}
+
+.judl{
+	font-family:'Lato',arial,helvetica,sans-serif;
+	text-align:center;
+	font-size:1.2em;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+/* Owl Carousel Main */
+#clientsay .item img{
+    display: block;
+}
+
+#clientsay p {
+	margin-top:20px;
+	color: #fff;
+	font-family:'Lato',arial,helvetica,sans-serif;
+	text-align:center;
+}
+
+.circle{
+	border-radius:100%;
+	margin:auto;
+	border:4px solid rgba(255, 255, 255, 0.16);
+}
+
+.cls{
+	width:80%;
+	margin:auto;
+}
+
+.client{
+	background:#2e2f34;
+	padding-top:40px;
+	padding-bottom:40px;
+	border-top:2px solid #565963;
+	border-bottom:2px solid #565963;
+}
+

@@ -13,3 +13,19 @@ jQuery(document).ready(function($) {
 	});
 	});
 });
+
+$(document).ready(function() {
+ 
+  $("#clientsay").owlCarousel({
+ 
+      navigation : false, 
+      slideSpeed : 300,
+      paginationSpeed : 400,
+	  autoPlay: true,
+	  items:1,
+	  autoHeight : true,
+
+ 
+  });
+ 
+});
