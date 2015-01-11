@@ -1,7 +1,5 @@
 <?php 
-	// Controller 
-	
-	function clink(){
-		echo "http://".$_SERVER['HTTP_HOST']."/tumbas/";
-	}
+	include "conf/config.php";
+	include "inc/model/db.php";
+	include "inc/function.php";
 ?>

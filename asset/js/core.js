@@ -22,10 +22,42 @@ $(document).ready(function() {
       slideSpeed : 300,
       paginationSpeed : 400,
 	  autoPlay: true,
-	  items:1,
+	  singleItem:true,
 	  autoHeight : true,
 
  
   });
+  
+  
  
+});
+
+//Nice Scroll
+$(document).ready(
+
+    function () {
+
+        $("html").niceScroll({
+            cursorcolor: "rgba(0, 0, 0, 0.5)",
+            cursorwidth: "15px",
+            cursorborderradius: "0px",
+            autohidemode: "cursor",
+            cursorborder: 'none',
+            zindex: '99999'
+        });
+
+    }
+
+);
+
+// Light Box 
+$(function() {
+    $('#imgOpened').dialog({
+        autoOpen:false
+    });
+
+    $(".second-effect a").click(function(e) {
+        e.preventDefault();
+        $('#imgOpened').dialog('open');
+    });
 });
