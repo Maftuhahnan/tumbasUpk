@@ -22,6 +22,12 @@
 				</div>
 				<div class="form-group" id="rgs">
 					<div class="input-group ">
+						<span class="input-group-addon modal-st"><i class="glyphicon glyphicon-pencil"></i></span>
+						  <input type="text" class="form-control modal-st" name="nama" placeholder="Name">
+					</div>
+				</div>
+				<div class="form-group" id="rgs">
+					<div class="input-group ">
 						<span class="input-group-addon modal-st"><i class="glyphicon glyphicon-envelope"></i></span>
 						  <input type="email" class="form-control modal-st" name="email" placeholder="Email">
 					</div>

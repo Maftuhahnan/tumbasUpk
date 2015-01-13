@@ -92,13 +92,14 @@
     <div class="collapse navbar-collapse menu-sc" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav menu-scc">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Laptop</a></li>
-        <li><a href="#">Handphone</a></li>
-        <li><a href="#">Tablet</a></li>
-        <li><a href="#">Kamera</a></li>
-        <li><a href="#">Fashion</a></li>
-        <li><a href="#">Kesehatan</a></li>
-        <li><a href="#">Aksesoris</a></li>
+		<?php 
+			$kuerimn = tm::pilih("`kategori`");
+			while($menu = mysqli_fetch_array($kuerimn)){
+		?>
+		 <li><a href="#"><?php echo $menu['nama']; ?></a></li>
+		<?php
+			}
+		?>
        
       </ul>
 	  <form class="navbar-form navbar-right" role="search">
