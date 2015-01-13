@@ -91,12 +91,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse menu-sc" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav menu-scc">
-        <li><a href="#">Home</a></li>
+        <li><a href="<?php clink(); ?>home">Home</a></li>
 		<?php 
 			$kuerimn = tm::pilih("`kategori`");
 			while($menu = mysqli_fetch_array($kuerimn)){
 		?>
-		 <li><a href="#"><?php echo $menu['nama']; ?></a></li>
+		 <li><a href="<?php clink(); ?>home/<?php echo $menu['id']; ?>/"><?php echo $menu['nama']; ?></a></li>
 		<?php
 			}
 		?>
