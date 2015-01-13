@@ -71,11 +71,11 @@
 		  <!-- Nav tabs -->
 		  <ul class="nav nav-tabs" role="tablist">
 			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Buat Barang</a></li>
-			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Edit Barang</a></li>
+			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Manage Barang</a></li>
 			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Buat User</a></li>
-			<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Edit User</a></li>
+			<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Manage User</a></li>
 			<li role="presentation"><a href="#kategori" aria-controls="settings" role="tab" data-toggle="tab">Buat Category</a></li>
-			<li role="presentation"><a href="#editkate" aria-controls="settings" role="tab" data-toggle="tab">Edit Category</a></li>
+			<li role="presentation"><a href="#editkate" aria-controls="settings" role="tab" data-toggle="tab">Manage Category</a></li>
 		  </ul>
 
 		  <!-- Tab panes -->

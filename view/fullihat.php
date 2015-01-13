@@ -1,26 +1,4 @@
-<?php include "inc/header.php"; ?>
-<section class="cara">
-	<div class="container">
-		<div class="row cent">
-		  <div class="col-md-4 pdt">
-			<img src="<?php clink(); ?>asset/img/ico1.png" width="120">
-			<h3>Cari</h3>
-			<p>Cari Barag Yang Ingin Anda Beli</p>
-		  </div>
-		  <div class="col-md-4">
-			<img src="<?php clink(); ?>asset/img/ico3.png" width="180">
-			<h3>Beli</h3>
-			<p>Klik Button Beli dan Transfer</p>
-		 </div>
-		  <div class="col-md-4 pdt">
-			<img src="<?php clink(); ?>asset/img/ico2.png" width="120">
-			<h3>Konfirmasi</h3>
-			<p>Konfirmasi Barang Yang Sudah Anda Beli</p>
-		  </div>
-		</div>
-		
-	</div>
-</section>
+<?php include "../inc/headerv.php"; ?>
 <section class="isi-ctn" id="isinya">
 	<div class="container">	
 		<h1 class="judl">Latest Post</h1>
@@ -28,7 +6,14 @@
 	<div class="user" id="portfolio">
 		<div id="post-area" class="masonry" >
 		<?php 
-			$kuerips = tm::pilih("`barang` ORDER BY `id` DESC");
+			if(empty($_GET['getbrg'])){
+			redir(elink()."home/");
+			}
+			if(isset($_GET['getbrg'])){
+			$id = abs($_GET['getbrg']);
+			$kuerips = tm::pilih("`barang` WHERE `kategori` = '$id' ORDER BY `id` DESC");
+			$cekdata = mysqli_num_rows($kuerips);
+			if($cekdata > 0){
 			while($post = mysqli_fetch_array($kuerips)){
 		?>
 			<div class="post-copy">
@@ -42,10 +27,18 @@
 					<a href="" class="btn-rm">Buy</a>
 				</div>
 			</div>
-		<?php } ?>
+		<?php }
+		}else{
+			echo "<br><h4>Maaf Data Yang Anda Cari Tidak Ada<h4>";
+		}
+		}elseif($_GET['getbrg'] == null){
+			redir(elink()."home/");
+		}
+
+		?>
 		</div>
 	</div>
 	<div class="">
 	</div>
 </section>
-<?php include "inc/footer.php"; ?>
+<?php include "../inc/footer.php"; ?>

@@ -1,10 +1,38 @@
 <?php 
-	if(isset($_POST['artikel']){
+	if(isset($_POST['artikel'])){
+		$title = sp('judul');
+		$harga = sp('harga');
+		$gmb = $_FILES['gambar']['name'];
+		$tipe =  $_FILES['gambar']['type'];
+		$kategorib = sp('kategorib');
+		$tgl = date('Y-m-d');
+		$timed = date('Y-m-d H:i:s');
+		$filtgm = md5($timed).str_replace(" ","-",$gmb);
 		
+		if(empty($title) || empty($harga) || empty($kategorib) ){
+			alert("Maaf Data Yang Anda Masukan Tidak Boleh Kosong !",elink()."ad-tumbas");
+		}else{
+		if($tipe === "image/jpeg" || $tipe === "image/png" || $tipe === "image/jpg" || $tipe === "image/gif"){
+			$cgmup = move_uploaded_file($_FILES['gambar']['tmp_name'],"../../tmp/".$filtgm);
+			if($cgmup){
+				$cekar = tm::masuk("`barang` VALUES (null,'$title','$harga','$filtgm','$kategorib','$tgl')");
+				if($cekar){
+					alert("Data Sukses Di Masukan",elink()."ad-tumbas");
+				}else{
+					alert("Koneksi Ke Database Salah !",elink()."ad-tumbas");
+				}
+			}else{
+				alert("Upload gagal !",elink()."ad-tumbas");
+			}
+		}else{
+			alert("Image Harus Berformat jpg,jpeg,png,gif !!",elink()."ad-tumbas");
+		}
+		
+		}
 	}
 ?>
 <div class="well bs-component">
-              <form class="form-horizontal" method="post">
+              <form class="form-horizontal" method="post" enctype="multipart/form-data">
                 <fieldset>
                   <legend>Buat Barang</legend>
                   <div class="form-group">

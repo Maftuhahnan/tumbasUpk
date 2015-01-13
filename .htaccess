@@ -4,3 +4,4 @@ RewriteRule ^home$ index.php
 RewriteRule ^home/$ index.php
 RewriteRule ^ad-tumbas/$ view/admin/side.php
 RewriteRule ^ad-tumbas$ view/admin/side.php
+RewriteRule ^home/([a-zA-Z0-9]+)\/$ view/fullihat.php?getbrg=$1

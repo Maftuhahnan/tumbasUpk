@@ -9,8 +9,12 @@
 		return "http://".$_SERVER['HTTP_HOST']."/tumbas/";
 	}
 	
-	 function alert($kata,$hal){
+	function alert($kata,$hal){
 		echo "<script language='javascript'>alert('".$kata."');document.location='".$hal."';</script>";
+	}
+	
+	function redir($hal){
+		echo "<script language='javascript'>document.location='".$hal."';</script>";
 	}
 	 
 	function satpam($data){
