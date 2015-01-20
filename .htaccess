@@ -5,3 +5,13 @@ RewriteRule ^home/$ index.php
 RewriteRule ^ad-tumbas/$ view/admin/side.php
 RewriteRule ^ad-tumbas$ view/admin/side.php
 RewriteRule ^home/([a-zA-Z0-9]+)\/$ view/fullihat.php?getbrg=$1
+#RewriteRule ^home/s/(\?|\&)([^=]+)\=([^&]+)\/$ view/pencarianserc.php
+RewriteRule ^search/$ view/pencarianserc.php
+RewriteRule ^login/$ view/prcslg.php
+RewriteRule ^user/$ view/usertrans.php
+RewriteRule ^user$ view/usertrans.php
+RewriteRule ^logout/$ view/logout.php
+RewriteRule ^logout$ view/logout.php
+
+ErrorDocument 404 /tumbas/view/404.html
+

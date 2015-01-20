@@ -39,7 +39,7 @@
 					<p class="head-jd"><?php echo ucwords($post['title']); ?></p>
 					<p class="head-kal">Rp <?php echo number_format($post['harga'],2,",","."); ?></p>
 				
-					<a href="" class="btn-rm">Buy</a>
+					<a href="" class="btn btn-primary">Buy</a>
 				</div>
 			</div>
 		<?php } ?>

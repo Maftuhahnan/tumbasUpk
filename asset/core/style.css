@@ -212,6 +212,8 @@ body{
 	overflow: hidden;
 	clear: both;
 	width: 268px;
+	border-radius:5px;
+	box-shadow:1px 0px 5px #c0c0c0;
 	margin:5px;
 	background:#fff;
 	border:1px solid #c0c0c0;
@@ -555,4 +557,16 @@ body{
 .linksf dt{
 	margin-bottom:20px;
 	text-transform:uppercase;
+}
+
+#left{
+	float:left;
+}
+
+#right{
+	float:right;
+}
+
+.linksf > dd > a{
+	color:#fff;
 }

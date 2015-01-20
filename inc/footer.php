@@ -45,8 +45,8 @@
 	<div class="container">	
 		<h1 class="judl">Brand Partner</h1>
 		<div class="row">
-			  <div class="col-md-4">.col-md-4</div>
-			  <div class="col-md-8">.col-md-8</div>
+			  <div class="col-md-4"><img src="<?php clink(); ?>asset/img/bp2.png" width="250" id="right"></div>
+			  <div class="col-md-8"><img src="<?php clink(); ?>asset/img/bp1.png" width="750" id="left"></div>
 		</div>
 	</div>
 	
@@ -106,10 +106,14 @@
 				  <div class="col-xs-6 col-sm-3">
 					<dl class="linksf">
 					  <dt>Category</dt>
-					  <dd>Home</dd>
-					  <dd>About</dd>
-					  <dd>Contact</dd>
-					  <dd>Payments</dd>
+						 <?php 
+							$kuerimn = tm::pilih("`kategori`");
+							while($menu = mysqli_fetch_array($kuerimn)){
+						?>
+						 <dd><a href="<?php clink(); ?>home/<?php echo $menu['id']; ?>/"><?php echo ucwords($menu['nama']); ?></a></dd>
+						<?php
+							}
+						?>
 					</dl>
 				  </div>
 

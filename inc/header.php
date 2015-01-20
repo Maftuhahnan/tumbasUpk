@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include "inc/control.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -102,9 +103,9 @@
 		?>
        
       </ul>
-	  <form class="navbar-form navbar-right" role="search">
+	  <form class="navbar-form navbar-right" action="<?php clink(); ?>search/" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" name="s" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>

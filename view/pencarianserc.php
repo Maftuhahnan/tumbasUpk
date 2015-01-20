@@ -6,12 +6,12 @@
 	<div class="user" id="portfolio">
 		<div id="post-area" class="masonry" >
 		<?php 
-			if(empty($_GET['getbrg'])){
+			if(empty($_GET['s'])){
 			redir(elink()."home/");
 			}
-			if(isset($_GET['getbrg'])){
-			$id = abs($_GET['getbrg']);
-			$kuerips = tm::pilih("`barang` WHERE `kategori` = '$id' ORDER BY `id` DESC");
+			if(isset($_GET['s'])){
+			$id = satpam($_GET['s']);
+			$kuerips = tm::pilih("`barang` WHERE `title` LIKE '%$id%';");
 			$cekdata = mysqli_num_rows($kuerips);
 			if($cekdata > 0){
 			while($post = mysqli_fetch_array($kuerips)){
@@ -29,9 +29,9 @@
 			</div>
 		<?php }
 		}else{
-			echo "<br><h4>Maaf Data Yang Anda Cari Tidak Ada<h4>";
+			echo "<br><h4>Pencarian data untuk Kata Kunci : \"<b>".$_GET['s']."</b>\" Tidak Ada<h4>";
 		}
-		}elseif($_GET['getbrg'] == null){
+		}elseif($_GET['s'] == null){
 			redir(elink()."home/");
 		}
 
@@ -39,6 +39,7 @@
 		</div>
 	</div>
 	<div class="">
+	
 	</div>
 </section>
 <?php include "../inc/footer.php"; ?>
