@@ -570,3 +570,25 @@ body{
 .linksf > dd > a{
 	color:#fff;
 }
+
+.navbar-default .navbar-nav>.open>a{
+	background:transparent !important;
+}
+
+.duast > .dropdown-menu > li > a{
+	color:#676767 !important;
+}
+
+.alamat{
+	max-width:500px;
+	overflow:hidden;
+	padding-bottom:20px;
+}
+
+.albutton{
+	float:right;
+}
+
+.yusp{
+	margin-right:10px !important;
+}

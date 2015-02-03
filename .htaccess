@@ -4,7 +4,11 @@ RewriteRule ^home$ index.php
 RewriteRule ^home/$ index.php
 RewriteRule ^ad-tumbas/$ view/admin/side.php
 RewriteRule ^ad-tumbas$ view/admin/side.php
+RewriteRule ^ad-tumbas/user/$ view/admin/usmanage.php
+RewriteRule ^ad-tumbas/user$ view/admin/usmanage.php
+RewriteRule ^ad-tumbas/hapus/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/$ view/admin/hapus.php?jenis=$1&kat=$2
 RewriteRule ^home/([a-zA-Z0-9]+)\/$ view/fullihat.php?getbrg=$1
+RewriteRule ^buy/([a-zA-Z0-9]+)\/$ view/prcby.php?barang=$1
 #RewriteRule ^home/s/(\?|\&)([^=]+)\=([^&]+)\/$ view/pencarianserc.php
 RewriteRule ^search/$ view/pencarianserc.php
 RewriteRule ^login/$ view/prcslg.php
@@ -12,6 +16,20 @@ RewriteRule ^user/$ view/usertrans.php
 RewriteRule ^user$ view/usertrans.php
 RewriteRule ^logout/$ view/logout.php
 RewriteRule ^logout$ view/logout.php
+RewriteRule ^cekout$ view/cekout.php
+RewriteRule ^cekout/$ view/cekout.php
+RewriteRule ^history/$ view/allhis.php
+RewriteRule ^history$ view/allhis.php
+RewriteRule ^saran$ view/sarannya.php
+RewriteRule ^saran/$ view/sarannya.php
+RewriteRule ^konfirm/$ view/konfirm.php
+RewriteRule ^konfirm$ view/konfirm.php
+RewriteRule ^change/$ view/change.php
+RewriteRule ^change$ view/change.php
+RewriteRule ^change/password$ view/pass.php
+RewriteRule ^change/password/$ view/pass.php
+
 
 ErrorDocument 404 /tumbas/view/404.html
+ErrorDocument 403 /tumbas/view/404.html
 

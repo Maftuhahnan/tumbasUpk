@@ -22,10 +22,12 @@ if(isset($_POST['loginin'])){
 			if($_SESSION['role'] == 1){
 				redir(elink()."ad-tumbas");
 			}elseif($_SESSION['role'] == 2){
-				redir(elink()."home");
+				redir(elink()."user");
+			}else{
+				alert("Maaf Username Atau Password Anda Salah",elink()."logout");
 			}
 		}else{
-			redir(elink()."logout");
+			alert("Maaf Username Atau Password Anda Salah",elink()."logout");
 		}
 	}
 ?>

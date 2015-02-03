@@ -1,12 +1,18 @@
 <?php
 	// Controller 
+	function addhttp($url) {
+    if (!preg_match("@^[hf]tt?ps?://@", $url)) {
+        $url = "http://" . $url;
+    }
+    return $url;
+	}
 	
 	function clink(){
-		echo "http://".$_SERVER['HTTP_HOST']."/tumbas/";
+		echo addhttp($_SERVER['HTTP_HOST']."/tumbas/");
 	}
 	
 	function elink(){
-		return "http://".$_SERVER['HTTP_HOST']."/tumbas/";
+		return addhttp($_SERVER['HTTP_HOST']."/tumbas/");
 	}
 	
 	function alert($kata,$hal){

@@ -27,7 +27,9 @@
 							$ektmgb = mysqli_fetch_array($ktgmb);
 							echo $ektmgb['nama'];
 						?></td>
-						<td>Aksi</td>
+						<td><a href="<?php echo elink()."ad-tumbas/hapus/2/".$kmng['id']."/"; ?>"><i class="glyphicon glyphicon-remove btn-danger" title="Hapus Data"></i></a>
+					&nbsp;
+					<a href="delete"><i class="glyphicon glyphicon-pencil btn-success" title="Edit Data"></i></a></td>
 					  </tr>
 					<?php } ?>
 					</table>

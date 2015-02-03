@@ -61,3 +61,5 @@ $(function() {
         $('#imgOpened').dialog('open');
     });
 });
+
+

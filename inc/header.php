@@ -54,12 +54,25 @@
 				<li><a href="#">About</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Payment</a></li>
+				
+				<?php if(isset($_SESSION['idn'])){?>
+				<li class="dropdown duast">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi (<?php echo $_SESSION['usertb']; ?>) <b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					<li><a href="<?php clink(); ?>user">Keranjang Belanja</a></li>
+					<li class="divider"></li>
+					<li><a href="<?php clink(); ?>logout">Keluar</a></li>
+					
+				  </ul>
+				</li>
+				<?php }else{?>
 				<li>
 				<div class="btn-group btn-group-sm btn-pos" role="group" aria-label="Small button group">
 				  <a href="#tbsign" type="button" class="btn btn-default" id="red" data-toggle="modal" data-target="#myModal">sign up</a>
 				  <a type="button" class="btn btn-default" id="red1"  data-toggle="modal" data-target="#login">login</a>
 				</div>
 				</li>
+				<?php } ?>
 			  </ul>
 			</div><!-- /.navbar-collapse -->
 			</div>
